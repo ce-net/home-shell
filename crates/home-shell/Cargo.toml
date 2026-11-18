@@ -1,0 +1,20 @@
+[package]
+name = "home-shell"
+version = "0.1.0"
+description = "The home.shell cell: Home's layout for one viewer and device; no data, no panel code"
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "home-shell"
+path = "src/main.rs"
+
+[dependencies]
+home-shell-api = { path = "../home-shell-api" }
+shell-layout = { path = "../shell-layout" }
+ce-net-net = { workspace = true }
+ui-chain = { workspace = true }
+ce-wire = { workspace = true, features = ["server"] }
+ce-gate = { workspace = true }
+tokio = { version = "1", features = ["rt", "rt-multi-thread", "macros", "time", "sync", "net"] }

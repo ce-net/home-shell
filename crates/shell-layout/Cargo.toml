@@ -1,0 +1,10 @@
+[package]
+name = "shell-layout"
+version = "0.1.0"
+description = "The one Layout routine of the shells (home.shell@1, foreman.shell@2): slot lines filtered by the viewer's chain, placed per device, ordered by area, urgency, order"
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+ce-net-net = { workspace = true }

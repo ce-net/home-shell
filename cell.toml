@@ -1,0 +1,21 @@
+# One repo = one cell = one function. The layout of Home (apps.ce-net.com/home/): which slots, of which cells' views, for
+# this viewer and device. No data, no panel code (CE-REF-OPENERS-AND-HOME 5.1). Slot lines: repo:ce-net-net HOME_SLOTS.
+[cell]
+api = "home.shell"
+crate = "home-shell"
+args = ["serve"]
+kind = "function"
+owner = "foreman/win-2c3d"
+keep = true
+depends_on = []
+
+[launch]
+health = "HealthOp"
+start_timeout_ms = 5000
+restart_backoff_ms = [1000, 300000]
+
+[placement]
+# the HOME system in repo:ce-net-net (replicas 2)
+
+[limits]
+disk_bytes = "16M"

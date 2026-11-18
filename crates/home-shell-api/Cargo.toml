@@ -1,0 +1,10 @@
+[package]
+name = "home-shell-api"
+version = "0.1.0"
+description = "home.shell@1: the layout of Home (slots of other cells' views), nothing else"
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+ce-wire = { workspace = true, features = ["client"] }
